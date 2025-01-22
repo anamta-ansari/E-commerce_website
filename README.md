@@ -1,4 +1,4 @@
-E-Commerce Website
+E-Commerce Website (for Luxury Furniture)
 
 Overview
 Developed an e-commerce website using Next.js and Sanity CMS, with a Figma template created in a previous hackathon.
