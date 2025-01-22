@@ -1,0 +1,7 @@
+Test Case ID,Test Description,Expected Result,Actual Result,Status,
+TC001,Test Navigation links,All links navigate correctly,All links function as intended,Pass,
+TC002,Verify product listing display,Product display correctly,Product display correctly,Pass,
+TC003,Test Shopping Cart Functionality,"Items add , remove update correctly",Score 70,Pass,
+TC004,Analyze perfomance metrics,perfomance score > 90,Score 80,Pass,
+TC005,Check accessebility feature,perfomance score > 90,Score 80,Pass,
+TC006,Testing  Api ,Fetch data from Api correctly,Api is  working as intended,Pass,

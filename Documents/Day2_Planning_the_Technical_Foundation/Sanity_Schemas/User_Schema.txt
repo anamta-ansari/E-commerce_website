@@ -1,0 +1,29 @@
+export default {
+  name: 'user',
+  type: 'document',
+  title: 'User',
+  fields: [
+    { 
+      name: 'name', 
+      type: 'string', 
+      title: 'Name'
+    },
+    { 
+      name: 'email', 
+      type: 'string', 
+      title: 'Email'
+    },
+    {
+      name: 'password',
+      type: 'string',
+      title: 'Password',
+      hidden: true
+    },
+    {
+      name: 'orders',
+      type: 'array',
+      title: 'Orders',
+      of: [{ type: 'reference', to: [{ type: 'order' }] }]
+    }
+  ]
+};

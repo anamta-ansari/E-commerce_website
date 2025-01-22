@@ -1,0 +1,73 @@
+export default {
+  name: 'order',
+  type: 'document',
+  title: 'Order',
+  fields: [
+    { 
+      name: 'orderId', 
+      type: 'string', 
+      title: 'Order ID'
+    },
+    {
+      name: 'customer',
+      type: 'object',
+      title: 'Customer Information',
+      fields: [
+        { 
+          name: 'name', 
+          type: 'string', 
+          title: 'Name'
+        },
+        { 
+          name: 'email', 
+          type: 'string', 
+          title: 'Email'
+        },
+        { 
+          name: 'address', 
+          type: 'text', 
+          title: 'Address' 
+        }
+      ]
+    },
+    {
+      name: 'products',
+      type: 'array',
+      title: 'Ordered Products',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'product',
+              type: 'reference',
+              title: 'Product',
+              to: [{ type: 'product' }]
+            },
+            {
+              name: 'quantity',
+              type: 'number',
+              title: 'Quantity'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: 'totalAmount',
+      type: 'number',
+      title: 'Total Amount'
+    },
+    {
+      name: 'paymentStatus',
+      type: 'string',
+      title: 'Payment Status',
+      options: { list: ['Paid', 'Pending', 'Failed'] }
+    },
+    {
+      name: 'orderDate',
+      type: 'datetime',
+      title: 'Order Date'
+    }
+  ]
+};
