@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+E-Commerce Website
 
-## Getting Started
+Overview
+Developed an e-commerce website using Next.js and Sanity CMS, with a Figma template created in a previous hackathon.
+Features include dynamic product pages, a functional cart system, and an interactive FAQ component.
 
-First, run the development server:
+Activities
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Sanity CMS Integration
+Created a Sanity project and connected it to the Next.js e-commerce application.
+Built a script/importSanityData to fetch and import product data from an API into Sanity CMS.
+Fetched data from Sanity CMS to display on the /Products and Product Detail components.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dynamic Routing & Product Pages
+Leveraged Next.js dynamic routing to render individual product pages dynamically based on slugs fetched from Sanity CMS.
+Displayed detailed product information, including images, prices, and stock levels.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cart Functionality
+Implemented an "Add to Cart" feature, dynamically updating the cart with:
+Product details (name, image, price, stock level).
+Options to proceed to checkout or remove products.
+Incorporated user notifications for cart updates (e.g., product added/removed).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+FAQ Component
+Designed an interactive FAQ component using React with state management for dynamic behavior.
 
-## Learn More
+Testing
+Conducted thorough testing of all API endpoints to ensure functionality.
+Performed comprehensive testing of features, error handling, and performance:
+Resolved issues with fetching image data from Sanity CMS by assigning unique image URLs based on product IDs.
 
-To learn more about Next.js, take a look at the following resources:
+Deployment
+Successfully deployed the e-commerce website on Vercel.
+Addressed deployment errors caused by missing environment variables by properly configuring them in the Vercel dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Challenges
+Image Fetching Issue: Encountered errors when fetching image data from Sanity CMS.
+Solution: Assigned unique URLs for product images using their IDs.
+Deployment Errors: Deployment initially failed due to missing environment variables.
+Solution: Configured the required environment variables in Vercel’s dashboard.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This development journey resulted in a fully functional e-commerce platform hosted on Vercel, providing a dynamic shopping experience.
