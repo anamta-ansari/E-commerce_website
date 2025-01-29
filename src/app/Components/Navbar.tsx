@@ -22,8 +22,7 @@ export default function Navbar() {
           <li><Link href="/About" className="hover:text-yellow-500">About</Link></li>
           <li><Link href="/Contact" className="hover:text-yellow-500">Contact</Link></li>
           <li><Link href="/Blog" className="hover:text-yellow-500">Blog</Link></li>
-          <li><Link href="/Cart" className="hover:text-yellow-500">Cart</Link></li>
-          <li><Link href="/Check-out" className="hover:text-yellow-500">Check out</Link></li>
+          
           <li><Link href="/My-Account" className="hover:text-yellow-500">My Account</Link></li>
           <li><Link href="/Products" className="hover:text-yellow-500">Products</Link></li>
           <li><Link href="/FAQs" className="hover:text-yellow-500">FAQs</Link></li>
@@ -74,8 +73,7 @@ export default function Navbar() {
           <li><Link href="/About" className="hover:text-white" onClick={toggleMobileMenu}>About</Link></li>
           <li><Link href="/Contact" className="hover:text-white" onClick={toggleMobileMenu}>Contact</Link></li>
           <li><Link href="/Blog" className="hover:text-white" onClick={toggleMobileMenu}>Blog</Link></li>
-          <li><Link href="/Cart" className="hover:text-white" onClick={toggleMobileMenu}>Cart</Link></li>
-          <li><Link href="/Check-out" className="hover:text-white" onClick={toggleMobileMenu}>Check out</Link></li>
+          
           <li><Link href="/My-Account" className="hover:text-white" onClick={toggleMobileMenu}>My Account</Link></li>
           <li><Link href="/Products" className="hover:text-white" onClick={toggleMobileMenu}>Products</Link></li>
           <li><Link href="/FAQs" className="hover:text-white" onClick={toggleMobileMenu}>FAQs</Link></li>
